@@ -21,11 +21,8 @@ class TestSolution(unittest.TestCase):
             "((()[))",
         ]
         self.is_this_correct = IsBracesSequenceCorrect(
-            braces=(
-                "(",
-                "[",
-                "{",
-            )
+            opn_braces=("(", "[", "{"),
+            cls_braces=(")", "]", "}"),
         )
 
 

@@ -12,4 +12,4 @@ class Stack:
         return True if len(self._stack) == 0 else False
 
     def clear(self):
-        self._stack.__clear()
+        self._stack.clear()

@@ -27,6 +27,16 @@ class TestSolution(unittest.TestCase):
             cls_braces=(")", "]", "}"),
         )
 
+    def test_correct(self):
+        for braces in self.correct:
+            print(f"Checked {braces}")
+            self.assertEqual(self.is_this_correct(braces), True)
+
+    def test_incorrect(self):
+        for braces in self.incorrect:
+            print(f"Checked {braces}")
+            self.assertEqual(self.is_this_correct(braces), False)
+
 
 if __name__ == "__main__":
     unittest.main()

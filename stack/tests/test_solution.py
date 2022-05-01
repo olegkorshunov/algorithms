@@ -1,4 +1,5 @@
 import unittest
+from src.solution import IsBracesSequenceCorrect
 
 
 class TestSolution(unittest.TestCase):
@@ -10,6 +11,22 @@ class TestSolution(unittest.TestCase):
             "({(([()]))}[{}]())",
             "{{}}()()()()",
         ]
+        self.incorrect = [
+            "[",
+            ")",
+            "([)]",
+            "({}))",
+            "({()})[(()]",
+            "((){}()",
+            "((()[))",
+        ]
+        self.is_this_correct = IsBracesSequenceCorrect(
+            braces=(
+                "(",
+                "[",
+                "{",
+            )
+        )
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 import unittest
-from src.solution import IsBracesSequenceCorrect
+from bracket_sequence.solution import IsBracesSequenceCorrect
 
 
 class TestSolution(unittest.TestCase):

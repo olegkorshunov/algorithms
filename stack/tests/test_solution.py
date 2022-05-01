@@ -10,6 +10,7 @@ class TestSolution(unittest.TestCase):
             "({()}[()])",
             "({(([()]))}[{}]())",
             "{{}}()()()()",
+            "(2+3)*(2*[4+3])/{7*8^(.5)}",
         ]
         self.incorrect = [
             "[",
@@ -19,6 +20,7 @@ class TestSolution(unittest.TestCase):
             "({()})[(()]",
             "((){}()",
             "((()[))",
+            "(2+3)/{4-8",
         ]
         self.is_this_correct = IsBracesSequenceCorrect(
             opn_braces=("(", "[", "{"),

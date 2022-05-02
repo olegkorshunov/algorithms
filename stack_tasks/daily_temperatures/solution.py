@@ -11,13 +11,9 @@ class DailyTemperature:
         result = []
         for i in enumerate(temperature[::-1]):
             if self.stack.isEmpty():
-                if self.stack.isEmpty():
-                    self.stack.push(i)
-                    result.append(0)
-                    continue
-                elif i[1] <= self.stack.peek()[1]:
-                    self.stack.push(i)
-                    result.append(1)
+                self.stack.push(i)
+                result.append(0)
+                continue
 
             while i[1] >= self.stack.peek()[1]:
                 self.stack.pop()

@@ -13,3 +13,6 @@ class Stack:
 
     def clear(self):
         self._stack.clear()
+
+    def peek(self):
+        return self._stack[-1]

@@ -2,7 +2,7 @@ import unittest
 from bracket_sequence.solution import IsBracesSequenceCorrect
 
 
-class TestSolution(unittest.TestCase):
+class TestIsBracesSequenceCorrect(unittest.TestCase):
     def setUp(self):
         self.correct = [
             "[]",

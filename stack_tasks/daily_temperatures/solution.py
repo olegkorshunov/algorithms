@@ -28,4 +28,5 @@ class DailyTemperature:
                 result.append(i[0] - self.stack.peek()[0])
                 self.stack.push(i)
 
+            self.stack.clear()
             return result[::-1]

@@ -23,7 +23,7 @@ class IsBracesSequenceCorrect:
                 continue
             if brace in self.opn_braces:
                 self.stack.push(brace)
-            elif self.stack.is_empty():
+            elif self.stack.isEmpty():
                 return False
             else:
                 opn_brace = self.stack.pop()
@@ -31,6 +31,6 @@ class IsBracesSequenceCorrect:
                     self.stack.clear()
                     return False
 
-        result = self.stack.is_empty()
+        result = self.stack.isEmpty()
         self.stack.clear()
         return result

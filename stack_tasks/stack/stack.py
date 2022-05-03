@@ -1,3 +1,11 @@
+class PopFromEmptyStack(Exception):
+    """
+    Can't pop item from empty stack
+    """
+
+    pass
+
+
 class Stack:
     def __init__(self):
         self._stack = []
@@ -6,6 +14,8 @@ class Stack:
         self._stack.append(item)
 
     def pop(self):
+        if self.isEmpty():
+            raise PopFromEmptyStack
         return self._stack.pop()
 
     def isEmpty(self):

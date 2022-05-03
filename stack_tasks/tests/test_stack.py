@@ -1,6 +1,5 @@
 import unittest
-from stack.stack import Stack
-from stack.stack import PopFromEmptyStack
+from stack.stack import PopFromEmptyStack, Stack
 
 
 class TestStack(unittest.TestCase):
